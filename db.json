@@ -1,20 +1,12 @@
 {
   "register": {
     "session": {
-      "sessionToken": "0x0000000000000771AAAB077EE2ADBC4B9BC725E9A5D15877"
+        "sessionToken": "0x0000000000000771AAAB077EE2ADBC4B9BC725E9A5D15877"
     }
-  },
+},
   "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    },
-    {
-      "id": 2,
-      "body": "some comment",
-      "postId": 1
-    }
+    { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 2, "body": "some comment", "postId": 1 }
   ],
   "profile": {
     "name": "typicode"
