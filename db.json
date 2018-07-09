@@ -9,13 +9,12 @@
     },
     {
         "id": 2,
-        "caption": "Администратор",
+        "caption": "Форма",
         "iconCode": "settings",
         "sortOrder": 2,
-        "route": "/home",
+        "route": "/form",
         "params": {
-            "paramApiMethod": "getSettingsAdmin",
-            "dataApiMethod": "getDataAdmin"
+            "apiMethod": "getTestForm"
         }
     },
     {
