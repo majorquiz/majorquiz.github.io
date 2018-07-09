@@ -1,14 +1,30 @@
 {
-  "session_login": {
-    "session": {
-        "sessionToken": "0x0000000000000771AAAB077EE2ADBC4B9BC725E9A5D15877"
+  "menu": [
+    {
+        "id": 1,
+        "caption": "Главная",
+        "iconCode": "home",
+        "sortOrder": 1
+    },
+    {
+        "id": 2,
+        "caption": "Администратор",
+        "iconCode": "settings",
+        "sortOrder": 2,
+        "params": {
+            "paramApiMethod": "getSettingsAdmin",
+            "dataApiMethod": "getDataAdmin"
+        }
+    },
+    {
+        "id": 3,
+        "caption": "Структура",
+        "iconCode": "bussined",
+        "sortOrder": 3,
+        "params": {
+            "paramApiMethod": "getSettingsStructure",
+            "dataApiMethod": "getDataStructure"
+        }
     }
-},
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+]
 }
