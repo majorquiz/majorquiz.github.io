@@ -19,7 +19,7 @@
     {
         "id": 3,
         "caption": "Структура",
-        "iconCode": "bussines",
+        "iconCode": "business",
         "sortOrder": 3,
         "params": {
             "paramApiMethod": "getSettingsStructure",
