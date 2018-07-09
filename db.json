@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "caption": "Форма",
+        "caption": "Класс Форм",
         "iconCode": "settings",
         "sortOrder": 2,
         "route": "/form",
