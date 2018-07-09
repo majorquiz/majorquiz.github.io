@@ -16,17 +16,6 @@
         "params": {
             "apiMethod": "getTestForm"
         }
-    },
-    {
-        "id": 3,
-        "caption": "Структура",
-        "iconCode": "business",
-        "sortOrder": 3,
-        "route": "/home",
-        "params": {
-            "paramApiMethod": "getSettingsStructure",
-            "dataApiMethod": "getDataStructure"
-        }
     }
 ]
 }
