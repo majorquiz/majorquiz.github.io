@@ -4,13 +4,15 @@
         "id": 1,
         "caption": "Главная",
         "iconCode": "home",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "route": "home"
     },
     {
         "id": 2,
         "caption": "Администратор",
         "iconCode": "settings",
         "sortOrder": 2,
+        "route": "home",
         "params": {
             "paramApiMethod": "getSettingsAdmin",
             "dataApiMethod": "getDataAdmin"
@@ -21,6 +23,7 @@
         "caption": "Структура",
         "iconCode": "business",
         "sortOrder": 3,
+        "route": "home",
         "params": {
             "paramApiMethod": "getSettingsStructure",
             "dataApiMethod": "getDataStructure"
