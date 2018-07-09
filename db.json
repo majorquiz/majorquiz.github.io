@@ -1,5 +1,5 @@
 {
-  "api/User/Register": {
+  "api_User_Register": {
     "session": {
       "sessionToken": "0x0000000000000771AAAB077EE2ADBC4B9BC725E9A5D15877"
     }
