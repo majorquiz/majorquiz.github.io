@@ -1,2 +1,0 @@
-# majorquiz.github.io
-MajorQuiz
