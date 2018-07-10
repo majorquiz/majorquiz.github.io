@@ -21,6 +21,7 @@
   ],
   "paramTestForm": [
     {
+      "className": "CustomClass",
       "template": "123"
     },
     {
