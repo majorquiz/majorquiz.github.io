@@ -20,63 +20,58 @@
   ],
   "paramTestForm": [
     {
-      "key": "sport",
-      "type": "select",
+      "key": "firstName",
+      "type": "input",
       "templateOptions": {
-        "label": "Sport",
+        "label": "First Name"
+      }
+    },
+    {
+      "key": "lastName",
+      "type": "input",
+      "templateOptions": {
+        "label": "Last Name"
+      }
+    },
+    {
+      "key": "mac",
+      "type": "input",
+      "templateOptions": {
+        "label": "Mac Address",
+        "pattern": "([0-9A-F]{2}[:-]){5}([0-9A-F]{2})"
+      }
+    },
+    {
+      "key": "color",
+      "type": "radio",
+      "templateOptions": {
+        "label": "Color Preference (try this out)",
         "options": [
           {
-            "id": "1",
-            "name": "Soccer"
+            "label": "No Preference",
+            "value": null
           },
           {
-            "id": "2",
-            "name": "Basketball"
+            "label": "Green",
+            "value": "green"
+          },
+          {
+            "label": "Blue",
+            "value": "blue"
           }
-        ],
-        "valueProp": "id",
-        "labelProp": "name"
+        ]
       }
     },
     {
-      "key": "team",
-      "type": "select",
+      "key": "reason",
+      "type": "textarea",
       "templateOptions": {
-        "label": "Team",
-        "options": [],
-        "valueProp": "id",
-        "labelProp": "name"
+        "label": "Why?"
       },
       "expressionProperties": {
-        "templateOptions.options": "formState.selectOptionsData.teams.filter(team => team.sportId === model.sport)",
-        "model.team": "this.field.templateOptions.options.find(o => o.id === model.team) ? model.team:null"
-      }
-    },
-    {
-      "key": "player",
-      "type": "select",
-      "templateOptions": {
-        "label": "Player",
-        "options": [],
-        "valueProp": "id",
-        "labelProp": "name"
+        "templateOptions.label": "'Why did you choose ' + model.color + '?'"
       },
-      "expressionProperties": {
-        "templateOptions.options": "formState.selectOptionsData.players.filter(player => player.teamId === model.team)",
-        "model.player": "this.field.templateOptions.options.find(o => o.id === model.player) ? model.player:null"
-      }
-    },
-    {
-      "type": "input",
-      "key": "investmentDate",
-      "templateOptions": {
-        "type": "date",
-        "label": "Date of Investment:"
-      }
-    },
-    {
-      "className": "froalaEditor",
-      "template": "<div>Hello, Froala!</div>"
+      "hideExpression": "!model.color"
     }
   ]
 }
