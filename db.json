@@ -73,5 +73,9 @@
       },
       "hideExpression": "!model.color"
     }
-  ]
+  ],
+  "dataTestForm": {
+    "firstName": "Joan",
+    "lastName": "of Arc"
+  }
 }
