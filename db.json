@@ -1,21 +1,82 @@
 {
   "menu": [
     {
-        "id": 1,
-        "caption": "Главная",
-        "iconCode": "home",
-        "sortOrder": 1,
-        "route": "/home"
+      "id": 1,
+      "caption": "Главная",
+      "iconCode": "home",
+      "sortOrder": 1,
+      "route": "/home"
     },
     {
-        "id": 2,
-        "caption": "Класс Форм",
-        "iconCode": "settings",
-        "sortOrder": 2,
-        "route": "/form",
-        "params": {
-            "apiMethod": "getTestForm"
-        }
+      "id": 2,
+      "caption": "Класс Форм",
+      "iconCode": "settings",
+      "sortOrder": 2,
+      "route": "/form",
+      "params": {
+        "apiMethod": "TestForm"
+      }
     }
-]
+  ],
+  "paramTestForm": [
+    {
+      "key": "sport",
+      "type": "select",
+      "templateOptions": {
+        "label": "Sport",
+        "options": [
+          {
+            "id": "1",
+            "name": "Soccer"
+          },
+          {
+            "id": "2",
+            "name": "Basketball"
+          }
+        ],
+        "valueProp": "id",
+        "labelProp": "name"
+      }
+    },
+    {
+      "key": "team",
+      "type": "select",
+      "templateOptions": {
+        "label": "Team",
+        "options": [],
+        "valueProp": "id",
+        "labelProp": "name"
+      },
+      "expressionProperties": {
+        "templateOptions.options": "formState.selectOptionsData.teams.filter(team => team.sportId === model.sport)",
+        "model.team": "this.field.templateOptions.options.find(o => o.id === model.team) ? model.team:null"
+      }
+    },
+    {
+      "key": "player",
+      "type": "select",
+      "templateOptions": {
+        "label": "Player",
+        "options": [],
+        "valueProp": "id",
+        "labelProp": "name"
+      },
+      "expressionProperties": {
+        "templateOptions.options": "formState.selectOptionsData.players.filter(player => player.teamId === model.team)",
+        "model.player": "this.field.templateOptions.options.find(o => o.id === model.player) ? model.player:null"
+      }
+    },
+    {
+      "type": "input",
+      "key": "investmentDate",
+      "templateOptions": {
+        "type": "date",
+        "label": "Date of Investment:"
+      }
+    },
+    {
+      "className": "froalaEditor",
+      "template": "<div>Hello, Froala!</div>"
+    }
+  ]
 }
