@@ -21,6 +21,9 @@
   ],
   "paramTestForm": [
     {
+      "template": "123"
+    },
+    {
       "key": "firstName",
       "type": "input",
       "templateOptions": {
