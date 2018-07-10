@@ -21,10 +21,6 @@
   ],
   "paramTestForm": [
     {
-      "key": "name1",
-      "type": "file"
-    },
-    {
       "className": "customcl",
       "template": "123"
     },
