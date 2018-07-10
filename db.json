@@ -43,10 +43,6 @@
       }
     },
     {
-      "key": "file",
-      "type": "file"
-    },
-    {
       "key": "color",
       "type": "radio",
       "templateOptions": {
