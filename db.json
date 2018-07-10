@@ -14,7 +14,8 @@
       "sortOrder": 2,
       "route": "/form",
       "params": {
-        "apiMethod": "TestForm"
+        "apiMethod": "TestForm",
+        "tabid": "0"
       }
     }
   ],
