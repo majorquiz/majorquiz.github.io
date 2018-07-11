@@ -25,6 +25,14 @@
       "template": "123"
     },
     {
+      "key": "filename",
+      "type": "input",
+      "templateOptions": {
+        "type": "file",
+        "label": "First Name"
+      }
+    },
+    {
       "key": "firstName",
       "type": "input",
       "templateOptions": {
