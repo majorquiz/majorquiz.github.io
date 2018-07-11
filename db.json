@@ -21,10 +21,6 @@
   ],
   "paramTestForm": [
     {
-      "className": "customcl",
-      "template": "<input type='file' name='namefile'>"
-    },
-    {
       "key": "firstName",
       "type": "input",
       "templateOptions": {
